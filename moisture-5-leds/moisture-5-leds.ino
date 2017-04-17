@@ -21,6 +21,9 @@ http://www.instructables.com/id/Soil-Moisture-Sensor/
 note:
 didn't use a 1k resistor like the instructibles article
 
+leds, long legs in the 5v rail, short legs
+connected to the wires going back to the digital pins.
+
 */
 int led1 = 2;
 int led2 = 3;
