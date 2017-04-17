@@ -8,7 +8,7 @@
  required:
   Arduino or Genuino Board
   A momentary switch, button, or toggle switch
-  10k ohm resistor
+  10k ohm resistor (1k is fine)
   hook-up wires
   breadboard
 
