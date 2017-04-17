@@ -52,6 +52,7 @@ void loop() {
 
   Serial.println(sensorValue);
 
+ // red only
  if (sensorValue >= 820)
  {
  digitalWrite(led1, HIGH);
@@ -60,6 +61,7 @@ void loop() {
  digitalWrite(led4, HIGH);
  digitalWrite(led5, LOW);
 }
+// red and orange
 else if (sensorValue >= 615  && sensorValue < 820)
  {
  digitalWrite(led1, HIGH);
@@ -68,6 +70,7 @@ else if (sensorValue >= 615  && sensorValue < 820)
  digitalWrite(led4, LOW);
  digitalWrite(led5, LOW);
 }
+// red, orange, green
 else if (sensorValue >= 410 && sensorValue < 615)
  {
  digitalWrite(led1, HIGH);
@@ -76,6 +79,7 @@ else if (sensorValue >= 410 && sensorValue < 615)
  digitalWrite(led4, LOW);
  digitalWrite(led5, LOW);
 }
+// red, orange, green, green
 else if (sensorValue >= 250 && sensorValue < 410)
  {
  digitalWrite(led1, HIGH);
@@ -84,6 +88,7 @@ else if (sensorValue >= 250 && sensorValue < 410)
  digitalWrite(led4, LOW);
  digitalWrite(led5, LOW);
 }
+// all on
 else if (sensorValue >= 0 && sensorValue < 250)
  {
  digitalWrite(led1, LOW);
